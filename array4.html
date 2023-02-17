@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Array4</title>
+ </head>
+ <body>
+  	 <h3>demo on arrays</h3>
+	<script>
+		//finding max & min elements
+		let elements=[];
+		let n=+prompt("enter no.of values");
+
+		for(let i=0; i<n; i++)
+			elements[i]=+prompt(`enter a(${i}) value`)
+
+		let max=elements[0];	//assume
+		let min=elements[0];	//assume
+		for(let i=1; i<elements.length; i++)
+		{
+			if( elements[i]>max )
+				 max=elements[i];
+
+			if( elements[i]<min )
+				min=elements[i]
+		}
+		document.write(`Array	=> ${elements}<bR>`);
+		document.write(`Max Ele		:${max}<bR>`);
+		document.write(`Min Ele		:${min}<bR>`);
+	</script>
+ </body>
+</html>

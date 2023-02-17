@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Array1</title>
+ </head>
+ <body>
+  <h3>Demo on Array</h3>
+  <script>
+	//array listarea
+	let a=[];
+	document.write(`size of :${a.length}<br>`);
+	document.write(`array :${a}<br>`);
+	a[0]=10;
+	a[1]=20;
+	a[2]=30;
+	a[3]=40;
+	a[4]=50;
+	document.write(`size of :${a.length}<br>`);
+	document.write(`array :${a}<br>`);
+	let runs=[3,5,8,6,4,5];
+	let total=0;
+	for(let i=0; i<runs.length; i++)
+	{
+		total=total+a[i];
+		document.write(`over ${runs[i+1]}:${runs[i]}<br>`)
+		}
+  </script>
+ </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Array3</title>
+ </head>
+ <body>
+   <h3>demo on arrays</h3>
+	<script>
+		//storing diff types of data
+		let a=["ram", 40, 5.10, true, 9090909090, new Date( ) ];
+		document.write(`${a}<br>`);	
+
+		//re-sezing array
+		let b=[11,22,33,44,55,66,77,88,99];
+		document.write(`size	:${b.length}<bR>`);
+		document.write(`Array => ${b}<bR>`);		
+		b.length=5;	//reduce array size
+		document.write(`size	:${b.length}<bR>`);
+		document.write(`Array => ${b}<bR>`);		
+		b.length=7		//incre array size
+		b[5]=101
+		b[6]=202
+		document.write(`size	:${b.length}<bR>`);
+		document.write(`Array => ${b}<bR>`);		
+		//b.length=0;		removing array
+
+		//dynamic values
+		let c=[];
+		let n=+prompt("enter no.of values");
+
+		for(let i=0; i<n; i++)
+			c[i]=prompt("enter value")
+
+		document.write(`C	:${c}<bR>`);
+	</script>
+ </body>
+</html>

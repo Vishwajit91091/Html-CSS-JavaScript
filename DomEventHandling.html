@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dom</title>
+ </head>
+ <body>
+  <h3>Demo On elements Styles</h3>
+  <button id="head1">Hello World</button>
+  <button id="bt1">Change Color</button><br>
+  <input type="color"id="color">
+  <script>
+	document.querySelector("#bt1").onclick=function(){
+       document.querySelector("#head1").style.color="red";
+		}
+    document.querySelector("#color").onchange=function(){
+		document.body.style.backgroundColor=color.value
+		};
+  </script>
+ </body>
+</html>

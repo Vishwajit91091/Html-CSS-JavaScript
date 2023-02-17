@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+    <title>Dom</title>
+ </head>
+ <body> 
+    <h3>demo on adding optons to dropdown box</h3>	
+	<label>enter option</label>
+	<input type="text" id="tb"/>
+    <button>add option</button>
+	<br> <bR>
+	<select id="ddbox" style="width:150px;">
+	</select>
+
+	<script>
+		document.querySelector("button").onclick=function(){
+				const tob =document.querySelector("#tb");
+				const ddob=document.querySelector("#ddbox");
+				const opt=document.createElement("option");
+																						//<option></option>
+				opt.innerText=tob.value;	//<option>text</option>
+				ddob.appendChild(opt);
+				tob.value="";
+				tob.focus(); //req cursor pos
+		};
+	</script> 
+ </body>
+</html>

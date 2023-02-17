@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Array11</title>
+ </head>
+ <body>
+  	 <h3>demo on  array destructring</h3>	
+	<script> 
+		let a=[10,20,30];
+		//let x=a[0], y=a[1], z=a[2];		OR
+		let [x,y,z]=a;		//destructring
+		document.write(`${x}<br>${y}<br>${z}<br>${a}<br>`)
+
+		let b=[11,22,33,44,55,66,77,88,99];
+		let [i,j,k]=b;	//destructring with counts
+		document.write(`${i}<br>${j}<br>${k}<br>${b}<br>`)
+		var [e1,,,e2,,,,,e3]=b; //destructring with skipping eles
+		document.write(`${e1}<br>${e2}<br>${e3}<bR>`)
+
+		var [e1,e2,,,...eles]=b;	//destructring with skip & rest ope
+		document.write(`${e1}<br>${e2}<br>${eles}`)
+ 	</script>
+ </body>
+</html>

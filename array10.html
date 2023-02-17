@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Array10</title>
+ </head>
+ <body>
+  	 <h3>demo on  rest operator (...)</h3>
+	<script> 
+		let a=[10,20,30];
+		let b=[11,22,33,44,55];
+		let c=[12,34];
+		let abc = [...a,...b,...c ]		//array mearging
+		document.write(`${a}<br>`)
+		document.write(`${b}<br>`)
+		document.write(`${c}<br>`)
+		document.write(`${abc}<br>`)
+
+		let z = [...c,111,...a,222,333,...b ]		//array mearging
+		document.write(`${z}<br>`)
+ 	</script>
+ </body>
+</html>

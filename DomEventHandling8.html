@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dom</title>
+  <style>
+  img{
+  width:200px;
+  height:200px;
+  }
+  </style>
+ </head>
+ <body>
+  <h3>Demo On Element Style</h3>
+  <div align="center">
+ <input type="radio"id="r1"name="s">
+ <label>Small</label>&nbsp;&nbsp;&nbsp;
+<input type="radio"id="r2"name="s">
+ <label>medium</label>&nbsp;&nbsp;&nbsp;
+ <input type="radio"id="r3"name="s">
+ <label>Large</label>&nbsp;&nbsp;&nbsp;
+ <br><br>
+ <div align="center">
+ <img src="images/animal.jpg">
+ <img src="images/tree.jpg">
+ <img src="images/nature.jpg">
+ </div>
+ <script>
+ document.querySelector("#r1").onclick=function(){
+	 const imgs=document.images;
+	 for(let image of imgs){
+		 image.style.width="150px";
+         image.style.height="150px";
+		 }
+	 }
+	 document.querySelector("#r2").onclick=function(){
+	 const imgs=document.images;
+	 for(let image of imgs){
+		 image.style.width="250px";
+         image.style.height="250px";
+		 }
+	 }
+	 document.querySelector("#r3").onclick=function(){
+	 const imgs=document.images;
+	 for(let image of imgs){
+		 image.style.width="400px";
+         image.style.height="400px";
+		 }
+	 }
+ </script>
+ </body>
+</html>

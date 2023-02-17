@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Array12</title>
+ </head>
+ <body>
+   <h3>demo on html with arrays</h3>	
+	 <label>enter value</label>
+	 <input type="texT" id="num"/> <br>
+		<button onclick="addEle()">Add Element</button> &nbsp; 
+		<button onclick="showEle()">Show Element</button>
+		<br>
+		<output id="data"></output>
+	<script> 
+		var a=[];	//global array
+		var index=0;
+		function addEle()
+		{
+			let n=+num.value;
+			a[index]=n;
+			index++;
+			num.value="";
+			num.focus();		//req cursor
+		}
+		function showEle()
+		{
+			//document.write(a);
+			data.value="Elements => "+a;
+		}
+ 	</script>	 
+
+ </body>
+</html>

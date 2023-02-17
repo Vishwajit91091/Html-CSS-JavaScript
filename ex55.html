@@ -1,0 +1,64 @@
+<!--  example on select & option  tags -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>E55</title>
+    <link rel="icon" href="logo1.jpg"/>
+    <link rel="stylesheet" href="formstyles.css"/>
+ </head>
+ <body>
+	<div>			
+		<h2><u>Registration Form</u></h2>
+		<form action="register.jsp" method="get">
+			<label>Fullname</label> <span>*</span><br>
+			<input type="text" id="fna" name="fna" required/> 
+			<br>
+			<label>Email Id</label> <span>*</span><br>
+			<input type="text" id="emid" name="emid" required/> 
+			<br>
+			<label>Contact number</label> <span>*</span><br>
+			<input type="text" id="phone" name="phone" required/> 
+			<br>
+			<label>Course</label> <span>*</span><br>
+			<select id="course" name="course">
+				<option value="c">C</option>
+				<option value="cpp">CPP</option>
+				<option value="cj">Corejava</option>
+				<option value="aj">Advjava</option>
+				<option value="fsj">Full Stack Java</option>
+				<option value="asp">ASP.net</option>
+				<option value="c#">C#.net</option>
+				<option value="fsdn">Full Stack .Net</option>
+				<option value="python">Python</option>
+				<option value="dj">Django</option>
+				<option value="flask">Flask</option>
+				<option value="htm-js" selected>HTML-JavaScript</option>
+				<option value="angular">Angular</option>
+				<option value="react">React</option>
+				<option value="node">NodeJS</option>
+				<option value="php">PHP</option>
+				<option value="aws">AWS</option>
+				<option value="xml-ws">XML-Web Services</option>
+				<option value="oracle">Oracle</option>
+				<option value="mysql">MySQL</option>
+				<option value="mongo">MongoDB</option>
+				<option value="unix">Unix/Linux</option>
+			</select>
+			<br>
+			<label>Mode of Training</label> <span>*</span><br>
+			<select id="mot" name="mot">
+				<option value="Classroom">Classroom Training</option>
+				<option value="Online" selected>Online Training</option>
+				<option value="Project">Project Training</option>
+				<option value="Placement">Placement Training</option>
+				<option value="Weekend">Weekend Training</option>
+				<option value="Internship">Internship</option>
+			</select>
+			<br> <br>
+			<button name="b">Submit</button>
+		</form>
+	</div>				
+
+  
+ </body>
+</html>

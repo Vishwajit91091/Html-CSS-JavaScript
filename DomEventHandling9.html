@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+    <title>Dom</title>
+ </head>
+ <body> 
+    <h3>demo on removing element & adding elements</h3>	
+	<div id="div1">
+		<h1 id="head1">Red Apple</h1>
+		<h2 id="head2">Green Mangos</h2>
+		<h3 id="head3">Black Grape</h3>
+	</div>
+	<button id="bt1" onclick="document.querySelector('#head1').remove()">del element</button>
+	<button id="bt2">add element</button>
+	<script>
+		document.querySelector("#bt2").onclick=function(){
+				//element creation 
+				const hob=document.createElement("h2"); //<h2></h2>
+				hob.innerText="Yellow Banana";	//<h2>Yellow Banana</h2>
+				hob.id="head4"; //<h2 id="head4">Yellow Banana</h2>
+				hob.style.color="yellow";
+				hob.style.backgroundColor="#009900";
+					//<h2 id="head4" style="color:yellow;background-color:#00ff33;">Yellow Banana</h2>
+				//placing the element on webpage
+				//document.body.appendChild(hob);	OR
+				document.querySelector("#div1").appendChild(hob);
+			};
+	</script> 
+ </body>
+</html>

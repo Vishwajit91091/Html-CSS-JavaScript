@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Array7</title>
+ </head>
+ <body>
+   <h3>demo on nested arrays</h3>
+	<script>
+		let a=[10,20,30,40,50,20,60,80,20,90,20];
+
+		document.write(`${a.includes(40)}<br>`)
+		document.write(`${a.includes(99) }<bR>`)
+
+		document.write(`${a.indexOf(20)}<br>`)
+		document.write(`${a.indexOf(55)}<br>`)
+		document.write(`${a.indexOf(20, 6)}<br>`)
+
+		document.write(`${a.lastIndexOf(20)}<br>`)
+
+		document.write(`${a.indexOf(20, a.indexOf(20)+1 )}<br>`)
+
+		a.reverse()
+		document.write(`${a}<br>`)
+
+		let names=["rama","ram","ramana","ramarama","Ramarao","ramakrishna","raman"];
+		document.write(`${names}<br>`)
+		names.sort()		//asc		a-z
+		document.write(`${names}<br>`)
+		names.reverse()		//desc	z-a
+		document.write(`${names}<br>`)
+  		document.write(`${names.join("<img src='images/b.png'>")}<br>`)
+	</script>
+ </body>
+</html>
