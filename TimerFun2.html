@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>timer</title>
+  <script>
+		//to display digital clock
+		window.setInterval( ()=>{
+			let t=new Date().toLocaleTimeString();
+			document.querySelector("#time").innerText=t;
+			}, "1000");
+	</script> 
+ </head>
+ <body>
+   <h3 align="center"color="whight">Vishwajit Singh</h3>	
+	<h2 id="time" align="center"></h2>
+	<div align="center">
+	<img src="images/maa.jpg"width="400px"style="border-radius:50px;">
+    <br>
+	<button id="start">Start</button>
+	<button onclick="window.clearInterval(x)">Stop</button>
+		</div>
+	<script>
+		//to change background color for every 3sec
+		document.querySelector("#start").onclick= ()=>{
+		x=setInterval( function(){
+		const c="#"+parseInt(Math.random()*1000000);
+		document.body.style.backgroundColor=c;
+		} , "2000");};
+						
+	</script>
+ </body>
+</html>

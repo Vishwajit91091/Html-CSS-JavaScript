@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>js18</title>
+  <style>
+	div{
+  width:200px;
+  padding:40px;
+  background-image:url(images/nature7.gif);
+  border-style:solid 2px 2px #6699ff;
+  margin:auto auto auto;
+       color:#ffffff;
+		box-shadow:1px 15px 0px:red;
+        border-radius:10%;
+	input{
+	outline:none;
+	border:none;
+	font-size:20px;
+	width:150px;
+	}
+	input{
+	outline:none;
+	border:none;
+	font-size:20px;
+	width:150px;
+	}
+	botton{
+	width:160px;
+	height:30px;
+	font-size:22px;
+	transition:border-radius linear 1s;
+	}
+	button:hover{
+	border-radius:50%;
+	}
+	output{
+	font-size:18px;
+	color:#660033;}
+
+  </style>
+ </head>
+ <body>
+ <div>
+  <h3>Intrest Calculator</h3>
+  <p>
+	<label>Principle Amount</label></br>
+	<input type="text"id="pamt"/><span>&#8377</span>
+  </p>
+  <p>
+	<label>Rate of Intrest</label></br>
+	<input type="text"id="roi"/><span>&#8377</span>
+  </p>
+  <p>
+	<label>Time</label></br>
+	<input type="text"id="time"/><span>Year(s)</span>
+  </p>
+  <p>
+	<button onclick="compute()">Calculate</button>
+  </p>
+  <output id="amount"></output>
+  
+  </div>
+	<script>
+		function compute(){
+			let p,r,t,si;
+			p=pamt.value;
+			r=roi.value;
+			t=time.value;
+			si=p*t*r/100;
+			amount.value=`Simple Intrest+Amount:`+si;
+			}
+	</script>
+ </body>
+</html>

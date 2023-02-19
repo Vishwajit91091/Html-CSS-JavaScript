@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>js28</title>
+ </head>
+ <body>
+  <label>Table No</label>
+  <input type="text" id="tn">
+  <button onclick="PrintTable()">Print Table</button>
+  <script>
+  function PrintTable(){
+	  let n,i,res;
+	  n=tn.value;
+	  for(i=1; i<=10; i++){
+		  res=n*i;
+		  document.write(n+`*`+i+`=`+res+`<br>`)
+		  }
+       }
+  </script>
+ </body>
+</html>

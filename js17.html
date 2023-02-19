@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>js17</title>
+  <style>
+  div{
+  width:200px;
+  padding:40px;
+  background-image:url(images/nature5.gif);
+  border-style:solid 2px 2px #6699ff;
+  margin:auto auto auto;
+       color:#99ff66;
+		box-shadow:1px 15px 0px:red;
+        border-radius:10%;
+	input{
+	outline:none;
+	border:none;
+	font-size:20px;
+	width:150px;
+	}
+	
+    botton{
+	width:250px;
+	height:150px;
+	font-size:150px;
+	transition:border-radius linear 1s;
+	}
+	button:hover{
+	border-radius:50%;
+	}
+	output{
+	font-size:18px;
+	color:#660033;}
+	span{
+	font-size:22px;
+	}
+	
+	</style>
+ </head>
+ <body>
+   
+  <div >
+  
+	<h3><em>Airthmatic Calclutor</em></h3>
+	<p>
+	<input type="text" id="firstNum"placeholder="FirstNumber"style="text-align:right""/>
+	</p>
+	<p>
+	<input type="text" id="secNum"placeholder="SecondNumber"style="text-align:right"/>
+	</p>
+	<p>
+	<input type="text" id="result"readonly/><br>
+	<button onclick="result.value=parseFloat(firstNum.value)+parseFloat(secNum.value)"><span>+<span></button>
+	<button onclick="result.value=parseFloat(firstNum.value)-parseFloat(secNum.value)"><span>-<span></button>
+	<button onclick="result.value=parseFloat(firstNum.value)*parseFloat(secNum.value)"><span>*<span></button>
+	<button onclick="result.value=parseFloat(firstNum.value)%parseFloat(secNum.value)"><span>%<span></button>
+	<button onclick="result.value=parseFloat(firstNum.value)^parseFloat(secNum.value)"><span>^<span></button>
+	</p>
+	
+  </div>
+
+ </body>
+</html>

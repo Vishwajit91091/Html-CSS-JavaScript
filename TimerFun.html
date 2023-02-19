@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+ </head>
+ <body> 
+    <h1 align="center">Image Sliding</h1>	
+	<div style="widht:100%; height:500px;" align="center">
+		<img src="images/animal.jpg" width="70%" height="100%"/>
+	</div>
+	<script>
+		const imgs=["animal.jpg", "rose.jpg", "nature2.jpg", "nature3.jpg", "nature.jpg", "moon.jpg", "water.jpg"];
+		let index=1;
+		setInterval( function() {
+					if(index==imgs.length)
+							index=0;
+					document.querySelector("img").src="images/"+imgs[index];	
+					index++;
+				}, "3000");
+	</script>
+ </body>
+</html>

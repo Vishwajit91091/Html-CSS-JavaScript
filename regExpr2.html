@@ -1,0 +1,67 @@
+<!-- Reg expr -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Validations</title>
+ </head>
+ <body>
+		<h3>demo Reg Expr</h3>
+		<form id="f" action="register.html">
+			<label>Fullname</label> <br>
+			<input type="text" id="fna"/> <bR>
+			<label>Contact number</label> <br>
+			<input type="text" id="phone" maxlength="10"/> <bR>
+			<label>Email id</label> <br>
+			<input type="email" id="mailid"/> <bR>
+			<label>Pincode</label> <bR>
+			<input type="text" id="pcode" maxlength="6"/> <br>
+			<button>Submit</button>
+		</form>
+
+		<script>
+			document.querySelector("#f").addEventListener("submit", checkData );
+			
+			function checkData(f)
+			{
+			//checking full name
+				const fn=document.querySelector("#fna");
+				const nameexp = /^[a-zA-Z ]*$/;
+				if(nameexp.test(fn.value)==false || fn.value=="")
+				{
+					fn.style.border="2px solid red";
+					f.preventDefault();
+				} else {
+					//fn.all=unset;
+					fn.style.border="1px solid";
+				}
+
+			//checking phone number
+				const ph=document.querySelector("#phone");
+				const phexp = /^[6789]\d{9}$/;
+				if(phexp.test(ph.value)==false)
+				{
+					ph.style.border="2px solid red";
+					f.preventDefault();
+				} else {
+					//fn.all=unset;
+					ph.style.border="1px solid";
+				}
+
+			//checking pincode
+				const pc=document.querySelector("#pcode");
+				const pcexp = /^\d{6}$/;
+				if(pcexp.test(pc.value)==false)
+				{
+					pc.style.border="2px solid red";
+					f.preventDefault();
+				} else {
+					//fn.all=unset;
+					pc.style.border="1px solid";
+				}
+		
+			}
+	
+		</script>
+ </body>
+</html>
